@@ -1,6 +1,7 @@
 def is_weekend(day):
     return day == 6 or day == 7
 
+
 def get_discount(amount):
     if amount >= 5000:
         return round(amount * 0.10, 2)
@@ -8,6 +9,7 @@ def get_discount(amount):
         return round(amount * 0.05, 2)
     else:
         return 0
+
 
 def describe_number(n):
     even_str = "четное" if n % 2 == 0 else "нечетное"
@@ -20,6 +22,7 @@ def describe_number(n):
     else:
         rank_str = ""
     return f"{even_str} {rank_str} число"
+
 
 def convert_to_meters(unitNumber, lengthInUnits):
     if unitNumber == 1:
@@ -35,6 +38,7 @@ def convert_to_meters(unitNumber, lengthInUnits):
     else:
         return 0
 
+
 def describe_age(age):
     units = [
         '', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'
@@ -49,11 +53,12 @@ def describe_age(age):
     hundreds = [
         '', 'сто'
     ]
+
     def number_words(n):
         if n == 100:
             return "сто"
         if 10 <= n <= 19:
-            return teens[n-10]
+            return teens[n - 10]
         ten = n // 10
         unit = n % 10
         result = []

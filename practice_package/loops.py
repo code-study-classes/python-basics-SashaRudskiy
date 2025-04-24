@@ -6,20 +6,20 @@ def sum_even_digits(number):
             total += n
     return total
 
+
 def count_vowel_triplets(text):
     vowels = set("aeiouy")
     text_lower = text.lower()
     count = 0
     i = 0
     while i <= len(text_lower) - 3:
-        window = text_lower[i:i+3]
+        window = text_lower[i:i + 3]
         if all(c in vowels for c in window):
             count += 1
             i += 3  # skip to next non-overlapping window
         else:
             i += 1
     return count
-
 
 
 def find_fibonacci_index(number):
@@ -35,6 +35,7 @@ def find_fibonacci_index(number):
     if a == number:
         return index
     return -1
+
 
 def remove_duplicates(string):
     if not string:

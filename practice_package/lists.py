@@ -2,9 +2,11 @@ def square_odds(numbers):
     # Возвращает список квадратов нечётных чисел
     return [n ** 2 for n in numbers if n % 2 != 0]
 
+
 def normalize_names(names):
     # Нормализует имена: первая буква заглавная, остальные строчные
     return [name.capitalize() for name in names]
+
 
 def remove_invalid_emails(emails):
     # Оставляет только валидные email по условиям задания
@@ -17,9 +19,11 @@ def remove_invalid_emails(emails):
         )
     return [email for email in emails if is_valid(email)]
 
+
 def filter_palindromes(words):
     # Оставляет только палиндромы (регистр не важен)
     return [word for word in words if word.lower() == word.lower()[::-1]]
+
 
 def calculate_factorial(n):
     # Факториал числа (n >= 0)
@@ -27,6 +31,7 @@ def calculate_factorial(n):
     for i in range(2, n + 1):
         result *= i
     return result
+
 
 def find_common_prefix(strings):
     # Если список пуст, вернуть ""

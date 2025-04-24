@@ -9,6 +9,7 @@ def count_char_occurrences(text):
             result[ch] = result.get(ch, 0) + 1
     return result
 
+
 def merge_dicts(dict1, dict2, conflict_resolver):
     # Объединение с учётом конфликтов
     result = dict(dict1)
@@ -19,6 +20,7 @@ def merge_dicts(dict1, dict2, conflict_resolver):
             result[key] = val2
     return result
 
+
 def invert_dictionary(original_dict):
     # Ключи становятся значениями, значения -- ключами. Несколько ключей в списке.
     result = {}
@@ -28,6 +30,7 @@ def invert_dictionary(original_dict):
         else:
             result[v] = [k]
     return result
+
 
 def dict_to_table(data_dict, columns):
     # columns -- порядок вывода, значения -- str, отсутствующие -- "N/A", выравнивание
@@ -64,6 +67,7 @@ def dict_to_table(data_dict, columns):
         line = "| " + " | ".join(row[col_ix].ljust(col_widths[col_ix]) for col_ix in range(len(columns))) + " |"
         lines.append(line)
     return "\n".join(lines)
+
 
 def deep_update(base_dict, update_dict):
     # Копируем базовый словарь

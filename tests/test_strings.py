@@ -1,3 +1,5 @@
+import pytest
+
 from practice_package.strings import (
     check_brackets,
     count_vowel_groups,
@@ -5,7 +7,7 @@ from practice_package.strings import (
     extract_file_name,
     reverse_domain,
 )
-import pytest
+
 
 class TestStringsFunctions:
 
